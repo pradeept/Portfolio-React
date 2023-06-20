@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import ThemeContext from "./context/ThemeContext";
+import { Routes, Route, Link } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import MhomePage from "./pages/md-sm/MhomePage";
+import ContactPage from "./pages/ContactPage";
+import { useMediaQuery } from 'react-responsive';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+const App = ()=>{
+
+    const {theme,handleTheme} = useContext(ThemeContext);
+
+
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 768px)' });
+    
+
+    /* later: for light/dark theme setting */
+
+    // const handleClick = ()=>{
+    //     if (theme === 'light'){
+    //         handleTheme('dark');
+    //     }else{
+    //         handleTheme('light');
+    //     }
+    // }
+
+
+    return <div className="flex ">
+        <Routes>
+            {isDesktopOrLaptop?<Route path='/' element={<HomePage />} />:<Route path='/' element={<MhomePage/>} />}
+            
+            <Route path="/contact" element={<ContactPage />} />
+        </Routes>
     </div>
-  );
 }
 
 export default App;
