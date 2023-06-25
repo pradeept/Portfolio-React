@@ -1,10 +1,14 @@
 import { useEffect, useRef } from 'react';
 import NavBar from '../../components/NavBar';
-import Typed  from 'typed.js'
+import Typed from 'typed.js';
+import { useTheme } from '../../context/ThemeContext';
+
 
 const MhomePage = () => {
 
     const el = useRef(null);
+
+    const {colors } = useTheme()
 
     useEffect(() => {
         const typed = new Typed(el.current, {
@@ -20,21 +24,23 @@ const MhomePage = () => {
         return () => typed.destroy();
     }, []);
     
-    return <div className='bg-secondary-dark-2 w-screen h-screen '>
+    return <div className={ `${colors.bg.secondary2} w-screen h-screen` }>
         <NavBar />
+        
         <div className='grid place-items-center gap-12 mt-8'>
-            <img src='/prof1.jpg' alt='profile pic' className='rounded-full w-1/3 '/>
+            <img src='/prof1.jp' alt='profile pic' className='rounded-full w-1/3 '/>
             
             
-            <div className="text-center w-full font-Itim ">
+            <div className="text-center font-Itim mt-10 ">
                 
-                <div>
-                    <h3 className="text-2xl mb-8 text-text-white">👋   <span className="text-3xl " ref={el}>Hola </span></h3>
-                    <h4 className=" text-text-white">I am</h4>
-                    <h1 className="text-4xl text-text-color-heading">Pradeep Taarkar</h1>
-                    <small className="text-text-grey text-xs">Aspiring Web Developer and Cyber-Security Enthusiast</small>
+                <div className=''>
+                    <h3 className={`text-2xl mb-8 ${colors.text.textClr}`}>👋   <span className="text-3xl " ref={el}>Hola </span></h3>
+                    <h4 className={`${colors.text.textClr} text-start`}>I am</h4>
+                    <h1 className={`${colors.text.heading} text-4xl`}>Pradeep Taarkar</h1>
+                    <small className={`${colors.text.textClrLight} text-xs`}>Aspiring Web Developer and Cyber-Security Enthusiast</small>
                 </div>
-                <div className="w-48 h-48 bg-text-color-heading rounded-full fixed bottom-[-40px] right-[-70px] opacity-30"></div>
+                <div className={`${colors.vector.circle} w-48 h-48 rounded-full fixed bottom-[-40px] right-[-70px] opacity-30`}></div>
+               
              </div>
         </div>
     </div>
