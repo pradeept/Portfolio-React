@@ -8,12 +8,13 @@ const SkillsPage = () => {
     const {colors} = useTheme()
 
     return <>
+    
         <SideBar />
         <ThemeToggle classNames="absolute right-4 top-4"/>
         <div className={`${colors.bg.primary} w-screen`}>
             <SkillsCard />
         </div>
-    
+
     </>
 }
 

@@ -2,6 +2,7 @@ import { createContext,useContext,useState } from "react"
 
 const ThemeContext = createContext();
 
+
 const ThemeProvider = ({ children })=>{
 
     const [darkTheme, setTheme] = useState(true);
@@ -18,8 +19,8 @@ const ThemeProvider = ({ children })=>{
        
         text: {
             heading: darkTheme ? "text-[#FD6060]" : "text-[#FD6060]",
-            textClr: darkTheme ? "text-[#FFFFFF]" : "text-[#3E3E3E]",
-            textClrLight:darkTheme?"text-[#E3E1E1]" : "text-[#7A7A7A]"
+            textClr: darkTheme ? "text-[#e3e3e3]" : "text-[#3E3E3E]",
+            textClrLight:darkTheme?"text-[#9e9b9b]" : "text-[#7A7A7A]"
         },
 
         vector:{
@@ -28,6 +29,16 @@ const ThemeProvider = ({ children })=>{
 
         boxShadow: {
             card:"shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]"
+        },
+
+        buttons:{
+            bg:darkTheme?"bg-[#3B82F6]":"bg-[#6e9ff0]",
+            hover:darkTheme?"hover:bg-[#60A5FA]":"hover:bg-[#8bb4f7]"
+        },
+
+        border:{
+            btnBorder:darkTheme?"border-[#1D4ED8]":"border-[#abbfe0]",
+            btnHover:darkTheme?"hover:border-[#abbfe0]":"hover:border-[#1D4ED8]"
         }
     }
 

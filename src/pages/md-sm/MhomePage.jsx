@@ -27,13 +27,13 @@ const MhomePage = () => {
     return <div className={ `${colors.bg.secondary2} w-screen h-screen` }>
         <NavBar />
         
-        <div className='grid place-items-center gap-12 mt-8'>
-            <img src='/prof1.jp' alt='profile pic' className='rounded-full w-1/3 '/>
+        <div className='grid place-items-center gap-12 mt-20'>
+            <img src='/prof1.jpg' alt='profile pic' className='rounded-full w-1/3 '/>
             
             
             <div className="text-center font-Itim mt-10 ">
                 
-                <div className=''>
+                <div >
                     <h3 className={`text-2xl mb-8 ${colors.text.textClr}`}>👋   <span className="text-3xl " ref={el}>Hola </span></h3>
                     <h4 className={`${colors.text.textClr} text-start`}>I am</h4>
                     <h1 className={`${colors.text.heading} text-4xl`}>Pradeep Taarkar</h1>

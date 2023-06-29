@@ -15,8 +15,8 @@ const ThemeToggle = ({classNames}) => {
     }
     
     return(
-        darkTheme ? <CgSun style={{ color: "#fad46b", fontSize: "2rem" }} className={`me-4 ${classNames}`} onClick={handleClick} /> :
-            <CgMoon  style={{ color: "#111111", fontSize: "2rem" }} className={` me-4 ${classNames}`} onClick={handleClick}/>
+        darkTheme ? <CgSun style={{ color: "#fad46b", fontSize: "2rem" }} className={`me-4 cursor-pointer ${classNames}`} onClick={handleClick} /> :
+            <CgMoon  style={{ color: "#111111", fontSize: "2rem" }} className={` me-4 cursor-pointer ${classNames}`} onClick={handleClick}/>
     )
 }
 
