@@ -43,8 +43,8 @@ const MprojectPage = () => {
             <div className={`p-4 mt-10`} >
                 <div >
                     {
-                        cards.map((item)=>{
-                            return <ProjectCards data={item} classNames={"mx-4 text-sm my-6 cursor-pointer"}/>
+                        cards.map((item,index)=>{
+                            return <ProjectCards data={item} key={index} classNames={"mx-4 text-sm my-6 cursor-pointer"}/>
                         })
                     }
                 </div>

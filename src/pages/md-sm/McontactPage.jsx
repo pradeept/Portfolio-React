@@ -10,8 +10,8 @@ const McontactPage = () => {
             <div className={`${colors.bg.secondary} w-screen h-screen overflow-scroll pb-10 font-Itim `}>
             <NavBar />
                 <div className={`text-center ${colors.text.textClr} flex-row justify-center `}>
-                    <div className={`flex justify-center pt-20 sm:hidden`}>
-                        <img src='/prof1.jpg' alt='profile pic' className='rounded-full w-1/3 h-36 border-4 border-text-grey  '/>
+                    <div className={`flex justify-center pt-20 `}>
+                        <img src='/prof1.jpg' alt='profile pic' className='rounded-full w-1/3 border-4 border-text-grey  '/>
                     </div>
                     <h1 className={`text-3xl pt-10 ${colors.text.heading}`}>Thank You! </h1>
                     <h3>for stopping by..</h3>

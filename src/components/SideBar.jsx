@@ -1,6 +1,5 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import {  NavLink, useLocation } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
-import { useEffect, useState } from "react";
 
 
 const SideBar = () => {
@@ -13,10 +12,10 @@ const SideBar = () => {
     return <div className={` w-80 h-scren  ${colors.bg.secondary} ${colors.text.textClr} flex flex-wrap place-content-center `}> 
 
         <div className="fixed flex-row ">
-            <div className="flex items-center justify-center text-center p-10 ">
+            <div className="flex-row items-center justify-center text-center p-10 ">
                 <img src="/prof1.jpg" alt="" className="rounded-full w-36  border-4 border-text-grey" />
-            </div>
                 {pathname !== "/" ? <h1 className={`${colors.text.heading} font-Itim text-center text-xl mb-3`} >Pradeep Taarkar</h1> : null}
+            </div>
 
 
             <div className={`p-3 h-2/3 ${colors.bg.secondary2} m-2 text-center rounded-2xl grid grid-row-4 gap-4 items-center font-Baumans text-lg`}>

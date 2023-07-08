@@ -10,6 +10,7 @@ const ThemeProvider = ({ children })=>{
     const colors = {
         bg: {
             primary: darkTheme ? "bg-[#282828]" : "bg-[#d6d4d4]",
+            primaryHover: darkTheme?"hover:bg-[#075985]":"hover:bg-[#0ea5e9]",
             secondary: darkTheme ? "bg-[#111111]" : "bg-[#FFFFFF]",
             secondary2: darkTheme ? 'bg-[#232323]' : 'bg-[#ECECEC]',
             card: darkTheme ? 'bg-[#383838]' : 'bg-[F3EFEF]',
