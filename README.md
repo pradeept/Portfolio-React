@@ -1,5 +1,5 @@
-<h1 >Portfolio-Website</h1>
+# Portfolio Website
 
-<p>My current Portfolio Website built using React.js and Tailwind-CSS.</p>
+#### My current Portfolio Website built using __React.js__ and __Tailwind-CSS__.
 
-Deployed: <a href="https://pradeept.netlify.app/">Here</a>
+Live 💡: https://pradeept.netlify.app/

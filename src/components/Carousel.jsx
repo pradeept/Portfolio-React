@@ -11,6 +11,11 @@ const Carousel = () => {
 
     const cards = [
         {
+            title:"Todo MERN",
+            src:"/todo-mern.jpg",
+            description:"Todo Application built using MERN [MongoDB, Express.js, React.js, Node.js] ,It uses jsonwebtoken for Authentication and Authorization. crypto-js is used for AES & SHA3 encyption. AES - for encrypting & decrypting data sent through API calls. SHA3 for hashing password in database."
+        },
+        {
             title:"Favourite Books App",
             src:"/favBook.jpg",
             description:"Favourite Books Keeping app is a React application. Where we  can add, update, delete our favorite books. "
