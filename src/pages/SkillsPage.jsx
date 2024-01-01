@@ -1,21 +1,20 @@
 import SideBar from "../components/SideBar";
 import { useTheme } from "../context/ThemeContext";
 import SkillsCard from "../components/SkillsCard";
-import ThemeToggle from '../components/ThemeToggle';
+import ThemeToggle from "../components/ThemeToggle";
 
 const SkillsPage = () => {
+  const { colors } = useTheme();
 
-    const {colors} = useTheme()
-
-    return <>
-    
-        <SideBar />
-        <ThemeToggle classNames="absolute right-4 top-4"/>
-        <div className={`${colors.bg.primary} w-screen`}>
-            <SkillsCard />
-        </div>
-
+  return (
+    <>
+      <SideBar />
+      <ThemeToggle classNames='absolute right-4 top-4' />
+      <div className={`${colors.bg.primary} w-screen`}>
+        <SkillsCard />
+      </div>
     </>
-}
+  );
+};
 
 export default SkillsPage;
