@@ -8,10 +8,10 @@ const SideBar = () => {
 
   return (
     <div
-      className={` w-80 h-scren  ${colors.bg.secondary} ${colors.text.textClr} flex flex-wrap place-content-center `}
+      className={` w-80 ${colors.bg.secondary} ${colors.text.textClr} flex flex-wrap place-content-center `}
     >
       <div className='fixed flex-row '>
-        <div className='flex-row items-center justify-center text-center p-10 '>
+        <div className='flex-col items-center justify-center text-center p-10'>
           <img
             src='/prof1.jpg'
             alt=''
@@ -19,7 +19,7 @@ const SideBar = () => {
           />
           {pathname !== "/" ? (
             <h1
-              className={`${colors.text.heading} font-Itim text-center text-xl mb-3`}
+              className={`${colors.text.heading} font-Itim text-center text-2xl mb-3`}
             >
               Pradeep Taarkar
             </h1>
