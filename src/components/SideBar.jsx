@@ -8,7 +8,7 @@ const SideBar = () => {
 
   return (
     <div
-      className={` w-80 ${colors.bg.secondary} ${colors.text.textClr} flex flex-wrap place-content-center `}
+      className={` min-h-screen w-80 ${colors.bg.secondary} ${colors.text.textClr} flex flex-wrap place-content-center `}
     >
       <div className='fixed flex-row '>
         <div className='flex-col items-center justify-center text-center p-10'>
@@ -17,13 +17,6 @@ const SideBar = () => {
             alt=''
             className='rounded-full w-36  border-4 border-text-grey'
           />
-          {pathname !== "/" ? (
-            <h1
-              className={`${colors.text.heading} font-Itim text-center text-2xl mb-3`}
-            >
-              Pradeep Taarkar
-            </h1>
-          ) : null}
         </div>
 
         <div

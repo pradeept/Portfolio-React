@@ -10,7 +10,7 @@ const SkillsPage = () => {
     <>
       <SideBar />
       <ThemeToggle classNames='absolute right-4 top-4' />
-      <div className={`${colors.bg.primary} w-screen`}>
+      <div className={`${colors.bg.primary} w-screen min-h-screen`}>
         <SkillsCard />
       </div>
     </>

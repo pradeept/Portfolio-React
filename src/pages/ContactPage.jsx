@@ -1,3 +1,8 @@
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
 import SideBar from "../components/SideBar";
 import ThemeToggle from "../components/ThemeToggle";
 import { useTheme } from "../context/ThemeContext";
@@ -22,44 +27,21 @@ const ContactPage = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                <img
-                  src='/icons/linkedin.png'
-                  alt='linkedin'
-                  className='p-2 hover:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]'
-                />
+                <AiFillLinkedin size={48} color='#0077B5' />
               </a>
               <a
                 href='https://www.github.com/pradeept'
                 target='_blank'
                 rel='noreferrer'
               >
-                <img
-                  src='/icons/github.png'
-                  alt='github'
-                  className='p-2 hover:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]'
-                />{" "}
+                <AiFillGithub size={48} />
               </a>
               <a
                 href='https://twitter.com/pradeep_taarkar'
                 target='_blank'
                 rel='noreferrer'
               >
-                <img
-                  src='/icons/twitter.png'
-                  alt='twitter'
-                  className='p-2 hover:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]'
-                />{" "}
-              </a>
-              <a
-                href='mailto: pradeep.tarakar17@gmail.com'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img
-                  src='/icons/mail.png'
-                  alt='mail'
-                  className='p-2 hover:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]'
-                />
+                <AiFillTwitterCircle size={48} color='#1DA1F2' />
               </a>
             </div>
           </div>
@@ -70,7 +52,7 @@ const ContactPage = () => {
               rel='noreferrer'
             >
               <button
-                className={`p-4 border-2  mt-6 ${colors.buttons.bg} ${colors.buttons.hover}`}
+                className={` p-4 border-2 rounded-xl mt-6 ${colors.buttons.bg} ${colors.buttons.hover}`}
               >
                 HIRE ME
               </button>

@@ -8,7 +8,7 @@ const MskillsPage = () => {
   return (
     <>
       <div
-        className={`${colors.bg.secondary} w-screen h-screen overflow-scroll`}
+        className={`${colors.bg.secondary} w-screen h-screen overflow-y-scroll`}
       >
         <NavBar />
         <div className={`${colors.bg.secondary} `}>

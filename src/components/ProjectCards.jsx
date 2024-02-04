@@ -2,11 +2,10 @@ import { useTheme } from "../context/ThemeContext";
 
 const ProjectCards = ({ data, classNames }) => {
   const { colors } = useTheme();
-
   return (
     <>
       <div
-        className={`${colors.bg.secondary2} flex-row  rounded-3xl pt-4 ${classNames} border-b-4 ${colors.border.btnBorder}`}
+        className={`${colors.bg.secondary2} flex-row  rounded-3xl pt-4 ${classNames} hover:border-b-4 hover:${colors.border.btnBorder}`}
       >
         <div>
           <img
