@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import NavBar from "../../components/NavBar";
 import { useTheme } from "../../context/ThemeContext";
 
