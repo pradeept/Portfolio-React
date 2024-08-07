@@ -36,13 +36,13 @@ const ContactPage = () => {
               >
                 <AiFillGithub size={48} />
               </a>
-              <a
+{/*               <a
                 href='https://twitter.com/pradeep_taarkar'
                 target='_blank'
                 rel='noreferrer'
               >
                 <AiFillTwitterCircle size={48} color='#1DA1F2' />
-              </a>
+              </a> */}
             </div>
           </div>
           <div>
