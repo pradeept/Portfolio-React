@@ -1,7 +1,6 @@
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiFillTwitterCircle,
 } from "react-icons/ai";
 import SideBar from "../components/SideBar";
 import ThemeToggle from "../components/ThemeToggle";
