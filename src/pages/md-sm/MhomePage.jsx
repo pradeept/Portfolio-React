@@ -43,7 +43,7 @@ const MhomePage = () => {
             </h3>
             <h4 className={`${colors.text.textClr} text-start`}>I am</h4>
             <h1 className={`${colors.text.heading} text-4xl`}>
-              Pradeep Taarkar
+              Pradeep Tarakar
             </h1>
             <small className={`${colors.text.textClrLight} text-xs`}>
             Aspiring Fullstack Developer with DevOps skills.

@@ -63,7 +63,7 @@ const SideBar = () => {
 
           <div>
             <footer className={`${colors.text.textClrLight}`}>
-              &#169; Pradeep Taarkar
+              &#169; Pradeep Tarakar
             </footer>
           </div>
         </div>
