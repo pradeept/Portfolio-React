@@ -52,8 +52,8 @@ const McontactPage = () => {
               >
                 <img
                   src='/icons/hackerrank.png'
-                  alt='js'
-                  title='Javascript'
+                  alt='hacker rank png'
+                  title='hackerrank'
                   width={50}
                 />
               </a>
