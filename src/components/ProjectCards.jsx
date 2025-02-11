@@ -5,7 +5,8 @@ const ProjectCards = ({ data, classNames }) => {
   return (
     <>
       <div
-        className={`${colors.bg.secondary2} flex-row  rounded-3xl pt-4 ${classNames} hover:border-b-4 hover:${colors.border.btnBorder}`}
+        className={`${colors.bg.secondary2} flex-row cursor-pointer rounded-3xl pt-4 ${classNames} hover:border-b-4 hover:${colors.border.btnBorder}`}
+        onClick={()=>window.open(data.href,"_blank")}
       >
         <div>
           <img
