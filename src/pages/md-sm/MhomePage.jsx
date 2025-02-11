@@ -26,9 +26,9 @@ const MhomePage = () => {
     <div className={`${colors.bg.secondary2} w-screen h-screen`}>
       <NavBar />
 
-      <div className='grid place-items-center gap-12 mt-20'>
+      <div className='grid place-items-center gap-2 mt-20'>
         <img
-          src='/prof1.jpg'
+          src='/image.png'
           alt='profile pic'
           className='rounded-full w-1/3 '
         />
@@ -46,7 +46,7 @@ const MhomePage = () => {
               Pradeep Taarkar
             </h1>
             <small className={`${colors.text.textClrLight} text-xs`}>
-              Aspiring Web Developer and Cyber-Security Enthusiast
+            Aspiring Fullstack Developer with DevOps skills.
             </small>
           </div>
           <div

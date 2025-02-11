@@ -39,8 +39,8 @@ const HomePage = () => {
           </h3>
           <h2 className={`text-start ${colors.text.textClr}`}>I am</h2>
           <h1 className={`text-6xl ${colors.text.heading}`}>Pradeep Taarkar</h1>
-          <small className={`${colors.text.textClrLight}`}>
-            Aspiring Web Developer and Cyber-Security Enthusiast
+          <small className={`${colors.text.textClrLight} text-lg`}>
+            Aspiring Fullstack Developer with DevOps skills.
           </small>
         </div>
         <div

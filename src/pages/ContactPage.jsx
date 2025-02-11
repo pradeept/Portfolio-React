@@ -1,7 +1,4 @@
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import SideBar from "../components/SideBar";
 import ThemeToggle from "../components/ThemeToggle";
 import { useTheme } from "../context/ThemeContext";
@@ -35,7 +32,19 @@ const ContactPage = () => {
               >
                 <AiFillGithub size={48} />
               </a>
-{/*               <a
+              <a
+                href='https://www.hackerrank.com/profile/pradeep_tarakar'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img
+                  src='/icons/hackerrank.png'
+                  alt='js'
+                  title='Javascript'
+                  width={50}
+                />
+              </a>
+              {/*               <a
                 href='https://twitter.com/pradeep_taarkar'
                 target='_blank'
                 rel='noreferrer'

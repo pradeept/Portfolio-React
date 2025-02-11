@@ -16,7 +16,7 @@ const McontactPage = () => {
         >
           <div className={`flex justify-center pt-20 `}>
             <img
-              src='/prof1.jpg'
+              src='/image.png'
               alt='profile pic'
               className='rounded-full w-1/3 border-4 border-text-grey  '
             />
@@ -31,7 +31,7 @@ const McontactPage = () => {
           >
             <h1 className='text-start'>I am on</h1>
             <div className='flex flex-wrap gap-3 justify-center  py-4 shadow-inner-xl rounded-xl'>
-            <a
+              <a
                 href='https://www.linkedin.com/in/pradeep-tarakar/'
                 target='_blank'
                 rel='noreferrer'
@@ -45,7 +45,19 @@ const McontactPage = () => {
               >
                 <AiFillGithub size={48} />
               </a>
-{/*               <a
+              <a
+                href='https://www.hackerrank.com/profile/pradeep_tarakar'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img
+                  src='/icons/hackerrank.png'
+                  alt='js'
+                  title='Javascript'
+                  width={50}
+                />
+              </a>
+              {/*               <a
                 href='https://twitter.com/pradeep_taarkar'
                 target='_blank'
                 rel='noreferrer'
