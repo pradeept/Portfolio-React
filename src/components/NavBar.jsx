@@ -65,7 +65,7 @@ const NavBar = () => {
               } active:border-text-white active:border-2`}
               to='/skills'
             >
-              Skills
+             Experience & Skills
             </NavLink>
             <NavLink
               className={`p-4 ${

@@ -38,7 +38,7 @@ const SideBar = () => {
             }  rounded-xl`}
             to='/skills'
           >
-            Skills
+            Experience & Skills
           </NavLink>
           <NavLink
             className={`p-4 ${

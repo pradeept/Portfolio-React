@@ -1,6 +1,7 @@
 import SkillsCard from "../../components/SkillsCard";
 import { useTheme } from "../../context/ThemeContext";
 import NavBar from "../../components/NavBar";
+import Experience from "../../components/Experience";
 
 const MskillsPage = () => {
   const { colors } = useTheme();
@@ -12,6 +13,7 @@ const MskillsPage = () => {
       >
         <NavBar />
         <div className={`${colors.bg.secondary} `}>
+          <Experience />
           <SkillsCard classNames={"text-center justify-between"} />
         </div>
       </div>
