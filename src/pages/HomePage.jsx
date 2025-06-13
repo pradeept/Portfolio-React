@@ -42,6 +42,24 @@ const HomePage = () => {
           <small className={`${colors.text.textClrLight} text-lg`}>
             Aspiring Fullstack Developer with DevOps skills.
           </small>
+          <div className='flex items-center justify-center gap-6 p-6 '>
+            <a
+              href='https://www.hackerrank.com/profile/pradeep_tarakar'
+              className='cursor-pointer max-w-10 drop-shadow-lg '
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img src='/icons/hackerrank.png' alt='css' title='Hackerrank' />
+            </a>
+            <a
+              href='https://leetcode.com/u/Pradeept17/'
+              className='cursor-pointer max-w-10 drop-shadow-lg'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img src='/icons/leetcode.png' alt='css' title='LeetCode' />
+            </a>
+          </div>
         </div>
         <div
           className={`w-80 h-80 ${colors.vector.circle} rounded-full fixed bottom-[-40px] right-[-70px] opacity-40`}

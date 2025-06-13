@@ -12,16 +12,10 @@ const McontactPage = () => {
       >
         <NavBar />
         <div
-          className={`text-center ${colors.text.textClr} flex-row justify-center `}
+          className={`text-center ${colors.text.textClr} flex-row justify-center mt-20`}
         >
-          <div className={`flex justify-center pt-20 `}>
-            <img
-              src='/image.png'
-              alt='profile pic'
-              className='rounded-full w-1/3 border-4 border-text-grey  '
-            />
-          </div>
-          <h1 className={`text-3xl pt-10 ${colors.text.heading}`}>
+         
+          <h1 className={`text-4xl pt-14 ${colors.text.heading}`}>
             Thank You!{" "}
           </h1>
           <h3>for stopping by..</h3>
@@ -29,7 +23,6 @@ const McontactPage = () => {
           <div
             className={`m-auto w-2/3 ${colors.bg.secondary2} p-10 mt-4 rounded-2xl `}
           >
-            <h1 className='text-start'>I am on</h1>
             <div className='flex flex-wrap gap-3 justify-center  py-4 shadow-inner-xl rounded-xl'>
               <a
                 href='https://www.linkedin.com/in/pradeep-tarakar/'
@@ -57,13 +50,14 @@ const McontactPage = () => {
                   width={50}
                 />
               </a>
-              {/*               <a
-                href='https://twitter.com/pradeep_taarkar'
+              <a
+                href='https://leetcode.com/u/Pradeept17/'
+                className='cursor-pointer '
                 target='_blank'
                 rel='noreferrer'
               >
-                <AiFillTwitterCircle size={48} color='#1DA1F2' />
-              </a> */}
+                <img src='/icons/leetcode.png' alt='css' title='LeetCode' />
+              </a>
             </div>
           </div>
           <a

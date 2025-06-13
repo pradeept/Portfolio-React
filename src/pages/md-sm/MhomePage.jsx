@@ -30,10 +30,10 @@ const MhomePage = () => {
         <img
           src='/image.png'
           alt='profile pic'
-          className='rounded-full w-1/3 '
+          className='rounded-full w-1/4 '
         />
 
-        <div className='text-center font-Itim mt-10 '>
+        <div className='text-center font-Itim mt-4 '>
           <div>
             <h3 className={`text-2xl mb-8 ${colors.text.textClr}`}>
               👋{" "}
@@ -46,8 +46,26 @@ const MhomePage = () => {
               Pradeep Tarakar
             </h1>
             <small className={`${colors.text.textClrLight} text-xs`}>
-            Aspiring Fullstack Developer with DevOps skills.
+              Aspiring Fullstack Developer with DevOps skills.
             </small>
+            <div className='flex items-center justify-center gap-6 p-4 '>
+              <a
+                href='https://www.hackerrank.com/profile/pradeep_tarakar'
+                className='cursor-pointer max-w-9'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src='/icons/hackerrank.png' alt='css' title='Hackerrank' />
+              </a>
+              <a
+                href='https://leetcode.com/u/Pradeept17/'
+                className='cursor-pointer max-w-9'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src='/icons/leetcode.png' alt='css' title='LeetCode' />
+              </a>
+            </div>
           </div>
           <div
             className={`${colors.vector.circle} w-48 h-48 rounded-full fixed bottom-[-40px] right-[-70px] opacity-30`}
