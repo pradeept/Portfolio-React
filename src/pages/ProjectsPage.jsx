@@ -7,6 +7,13 @@ const ProjectsPage = () => {
   const { colors } = useTheme();
   const cards = [
     {
+      title: "Edditor",
+      src: "/edditor.png",
+      description:
+        "Edditor is a rich text editor built using React.js, Express.js, Passport.js(Google Oauth) and Google drive APIs.",
+      href: "https://github.com/pradeept/Edditor",
+    },
+    {
       title: "Trello Clone",
       src: "/trello.png",
       description:

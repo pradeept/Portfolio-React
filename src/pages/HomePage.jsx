@@ -27,10 +27,17 @@ const HomePage = () => {
     <>
       <SideBar />
       <div
-        className={`text-center w-full ${colors.bg.primary}  h-screen  grid grid-row justify-center items-center font-Itim`}
+        className={`text-center w-full ${colors.bg.primary}  min-h-screen  grid grid-row justify-center items-center font-Itim`}
       >
         <div>
           <ThemeToggle classNames='absolute right-4 top-4' />
+          <div className="flex justify-center pb-4">
+          <img
+            src='/profile_pic_gibly.png'
+            alt='profile'
+            className='rounded-full w-48 '
+          />
+          </div>
           <h3 className={`text-3xl mb-8 ${colors.text.textClr}`}>
             👋{" "}
             <span className='text-5xl ' ref={el}>
@@ -60,6 +67,7 @@ const HomePage = () => {
               <img src='/icons/leetcode.png' alt='css' title='LeetCode' />
             </a>
           </div>
+          
         </div>
         <div
           className={`w-80 h-80 ${colors.vector.circle} rounded-full fixed bottom-[-40px] right-[-70px] opacity-40`}

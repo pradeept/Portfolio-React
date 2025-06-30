@@ -6,13 +6,13 @@ module.exports = {
       fontFamily: {
         Itim: ['Itim', 'sans-serif'],
         Baumans: ['Baumans', 'cursive'],
-        JetbrainsMono:['JetBrains Mono','cursive']
+        JetbrainsMono: ['JetBrains Mono', 'cursive']
+      },
+      colors: {
+        'text-white': '#ffffff',
+        'text-grey': '#E3E1E1',
+        'text-color-heading': '#FD6060'
       }
-    },
-    colors: {
-      'text-white': '#ffffff',
-      'text-grey':'#E3E1E1',
-      'text-color-heading':'#FD6060'
     }
   },
   plugins: [],

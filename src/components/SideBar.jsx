@@ -12,11 +12,7 @@ const SideBar = () => {
     >
       <div className='fixed flex-row '>
         <div className='flex-col items-center justify-center text-center p-10'>
-          <img
-            src='/image.png'
-            alt=''
-            className='rounded-full w-36  border-4 border-text-grey'
-          />
+
         </div>
 
         <div

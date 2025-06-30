@@ -23,12 +23,11 @@ const MhomePage = () => {
   }, []);
 
   return (
-    <div className={`${colors.bg.secondary2} w-screen h-screen`}>
+    <div className={`${colors.bg.secondary2} w-screen min-h-screen`}>
       <NavBar />
-
       <div className='grid place-items-center gap-2 mt-20'>
         <img
-          src='/image.png'
+          src='/profile_pic_gibly.png'
           alt='profile pic'
           className='rounded-full w-1/4 '
         />
